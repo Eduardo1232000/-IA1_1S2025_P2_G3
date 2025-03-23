@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detección de Rostro - MindAR</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-face-aframe.prod.js"></script>
+</head>
+<body style="margin: 0px; overflow: hidden;">
+    <a-scene mindar-face="cameraPosition: 0 0 0;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+        <!-- Cámara de detección de rostro -->
+        <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+        
+        <!-- Detección facial -->
+        <a-entity mindar-face-target="targetIndex: 0">
+            <!-- Modelo 3D para mostrar al detectar el rostro -->
+            <a-entity 
+                gltf-model="./assets/dragon_mask.glb"
+                position="0 0 0" 
+                scale="0.5 0.5 0.5" 
+                rotation="0 180 0">
+            </a-entity>
+        </a-entity>
+    </a-scene>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 5 - MindAR</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+</head>
+<body style="margin: 0px; overflow: hidden;">
+    <a-scene mindar-image="imageTargetSrc: ./assets/targets.mind;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+        <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+        <a-entity mindar-image-target="targetIndex: 0">
+            <!-- Modelo 3D (Ejemplo: Pato de GLTF) -->
+            <a-entity 
+                gltf-model="./assets/dragon_mask.glb"
+                position="0 0 0" 
+                scale="0.5 0.5 0.5" 
+                rotation="0 180 0">
+            </a-entity>
+        </a-entity>
+    </a-scene>
+</body>
+</html>

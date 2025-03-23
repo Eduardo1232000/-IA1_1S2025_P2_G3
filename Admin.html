@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto1 - IA</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="tema_anaranjado">
+    <div id='CUADRO_GRANDE_ADMIN'>
+        <button id='BOTON_REGRESAR_HOME'class="BOTON" onclick="redirigir('index.html');"> Salir</button>
+        <hr id="ADMIN_LINEA_TITULO">
+        <label id="ADMIN_TITULO">Administracion</label>
+        <label id="TEXTO_PROLOG">Prolog</label>
+        <label id="STATUS_JSON"></label>
+        <div id="ADMIN_DIV">
+            <button id='ADMIN_BOTON_SIGUIENTE'class="BOTON"onclick="AccionSiguiente()"> Siguiente</button>
+            <hr id="ADMIN_LINEA_TEXTO1">
+            <hr id="ADMIN_LINEA_TEXTO2">
+            <hr id="ADMIN_LINEA_TEXTO3">
+
+            <label for="fileInput"id="ADMIN_TEXTO_ARCHIVO">Cargar archivo Prolog:</label>
+            <input type="file" id="fileInput" accept=".pl">
+            <button onclick="guardarJson()">Guardar JSON</button>
+
+            <label id="ADMIN_DESCRIPCION1"class="DESCRIPCION">
+                Administracion y Configuracion general del sistema
+            </label>
+            <label id="ADMIN_TEXTO1"class="DESCRIPCION">
+                Facultades
+            </label>
+            <label id="ADMIN_TEXTO2"class="DESCRIPCION">
+                Carreras
+            </label>
+            <label id="ADMIN_TEXTO3"class="DESCRIPCION">
+                Aptitudes
+            </label>
+            
+            
+            <div id="ADMIN_DIV_FACULTADES">
+
+            </div>
+            <div id="ADMIN_DIV_CARRERAS">
+
+            </div>
+            <div id="ADMIN_DIV_APTITUDES">
+
+            </div>
+        </div>
+    </div>
+    <script src="js/animacion_y_navegacion.js"></script> 
+    <script src="js/Admin.js"></script> 
+</body>
+</html>

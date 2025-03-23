@@ -1,0 +1,63 @@
+[
+    {
+        "nombre_lugar": "Chichen ItzaARCHIVO",
+        "multimedia": [
+            [
+                {
+                    "titulo": "imagen1",
+                    "link": "https://images.unsplash.com/photo-1561577101-aa749bffbb70?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                },
+                {
+                    "titulo": "imagen2",
+                    "link": "https://plus.unsplash.com/premium_photo-1697730073345-fcb1cdc8334c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                },
+                {
+                    "titulo": "imagen3",
+                    "link": "https://plus.unsplash.com/premium_photo-1694475051986-b0384b4205ea?q=80&w=2078&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+            ],
+            [
+                {
+                    "titulo": "video1",
+                    "link": "https://videos.pexels.com/video-files/29604765/12740962_640_360_30fps.mp4"
+                },
+                {
+                    "titulo": "video2",
+                    "link": "https://videos.pexels.com/video-files/27049872/12057464_2560_1440_60fps.mp4"
+                },
+                {
+                    "titulo": "video3",
+                    "link": "https://videos.pexels.com/video-files/18014635/18014635-uhd_2560_1440_30fps.mp4"
+                }
+            ]
+        ],
+        "informacion": {
+            "nombre": "Chichen Itza",
+            "ubicacion": "Yucatan, Mexico",
+            "historia": "Fundacion: Chichen Itza fue una ciudad maya fundada alrededor del siglo VI d.C.\n\nDesarrollo: Se convirtio en uno de los centros urbanos más importantes y prosperos de la civilizacion maya entre los siglos IX y XII, con influencias de otras culturas como la tolteca.\n\nDeclive: La ciudad comenzó a declinar alrededor del siglo XV, y para el siglo XVI ya estaba abandonada, cuando los españoles llegaron a la region.",
+            "datos_curiosos": "La pirámide de Kukulkán fue diseñada con precisión matemática, y los mayas lograron una exactitud increíble en su construcción, reflejando un vasto conocimiento de geometría y astronomía.\n\nAunque se desconoce la causa exacta de su declive, algunos expertos sugieren que la llegada de los toltecas, las luchas internas y los cambios climáticos pudieron haber influido."
+        },
+        "sitio_web": "https://www.chichenitza.com/es",
+        "ubicacion": "https://maps.app.goo.gl/jbUdYpMSkBRX84za9"
+    },
+    {
+        "nombre_lugar": "Machu Picchu",
+        "multimedia": [
+            [
+                {
+                    "titulo": "imagen1",
+                    "link": "https://plus.unsplash.com/premium_photo-1694475501155-2f344cea9eb3?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+            ],
+            []
+        ],
+        "informacion": {
+            "nombre": "Machu Pichu",
+            "ubicacion": "Cordillera Oriental del sur de Peru",
+            "historia": "Fue construida en el siglo XV por el emperador inca Pachacutec.\n\nSe cree que fue un centro religioso, administrativo y de descanso para la nobleza inca.\n\nFue abandonada en el siglo XVI durante la conquista espanola y redescubierta en 1911 por el explorador Hiram Bingham.",
+            "datos_curiosos": "No fue mencionada en los registros coloniales, por lo que los espanoles nunca la encontraron.\n\nSe calcula que aproximadamente 60% de la construccion esta bajo tierra, en forma de cimientos y drenajes.\n\nFue declarada Patrimonio de la Humanidad por la UNESCO en 1983 y una de las 7 maravillas del mundo moderno en 2007."
+        },
+        "sitio_web": "https://www.perurail.com/es/destinos/machu-picchu/",
+        "ubicacion": "https://maps.app.goo.gl/4SUDtg82kTz9ENCE9"
+    }
+]

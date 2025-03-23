@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Interactivo</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+    <link rel="stylesheet" href="css/Estudiante.css">
+
+</head>
+<body>
+    <button id='BOTON_REGRESAR_HOME'class="BOTON" onclick="redirigir('index.html');"> Salir</button> 
+     <!-- RECONOCER COMPILADO DE IMAGENES -->
+    <a-scene mindar-image="imageTargetSrc: ./modelos/2target.mind"  
+             uiError="no" uiLoading="no" uiScanning="no"
+             vr-mode-ui="enabled: false" 
+             device-orientation-permission-ui="enabled: false">
+        
+        <!-- Cámara con raycaster para detectar clics -->
+        <a-camera position="0 0 0" look-controls="enabled: false" cursor="rayOrigin: mouse" raycaster="objects: .clickable; near: 0.1; far: 10000;"></a-camera>
+
+        <script src="js/Estudiante.js"></script>
+    </a-scene>
+     
+    <script src="js/animacion_y_navegacion.js"></script> 
+</body>
+</html>

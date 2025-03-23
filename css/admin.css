@@ -1,0 +1,189 @@
+.tema_anaranjado{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: 
+        linear-gradient(120deg, #783b23 40%, #49230b 50%),
+        radial-gradient(circle, #49210b 10%, transparent 60%);
+    background-blend-mode: screen;
+
+    opacity: 0;                             /* PARA TRANSICION DE ENTRADA */
+    transition: opacity 0.5s ease-in-out;
+}
+#CUADRO_GRANDE_ADMIN{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background: radial-gradient(circle, transparent 10%, #453203 70%);
+    background-color: #66600a;
+    border-radius: 10px;
+    width: 90%; 
+    height: 90vh; 
+    transition: all 0.5s ease; 
+}
+body.aparecer {
+    opacity: 1;
+}
+.DESCRIPCION{
+    position: absolute;
+    font-size: 3vh;
+    color: white;
+}
+#ADMIN_DIV{
+    position: absolute;
+    top: 18%;
+    left: 0%;
+    width: 100%;
+    height: 82%;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: opacity 0.5s ease, visibility 0s 0.3s;
+}
+#ADMIN_DIV_FACULTADES{
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    width: 25%;
+    height: 50%;
+    background-color: white;
+}
+#ADMIN_DIV_CARRERAS{
+    position: absolute;
+    top: 35%;
+    left: 31%;
+    width: 32%;
+    height: 50%;
+    background-color: white;
+}
+#ADMIN_DIV_APTITUDES{
+    position: absolute;
+    top: 35%;
+    left: 66%;
+    width: 31%;
+    height: 50%;
+    background-color: white;
+}
+.BOTON{
+    position: absolute;
+    border-radius: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-color: transparent;
+    cursor: pointer;
+    transition: 500ms;
+}
+#BOTON_REGRESAR_HOME{
+    top: 3%;
+    left: 1%;
+    width: 15vh;
+    height: 8vh;
+    background-color: #802525;
+}
+#BOTON_REGRESAR_HOME:hover{
+    background-color: #4d0d0d;
+}
+#ADMIN_BOTON_SIGUIENTE{
+    top: 90%;
+    left: 90%;
+    width: 8%;
+    height: 7%;
+    font-size: 2vh;
+    background-color: #17671d;
+    border-radius: 12px;
+}
+#ADMIN_BOTON_SIGUIENTE:hover{
+    background-color: #07480c;
+}
+#ADMIN_TITULO{
+    position: absolute;
+    width: 20%;
+    left: 33%;
+    top: 2%;
+    font-size: 10vh;
+    font-weight: bold;
+    color: white;
+}
+#ADMIN_DESCRIPCION1{
+    width: 50%;
+    left: 32%;
+    top: 0%;
+}
+#ADMIN_TEXTO1{
+    top: 25%;
+    left: 5%;
+    width: 20%;
+    text-align: center;
+
+}
+#ADMIN_TEXTO2{
+    top: 25%;
+    left: 32%;
+    width: 30%;
+    text-align: center;
+}
+#ADMIN_TEXTO3{
+    top: 25%;
+    left: 66%;
+    width: 30%;
+    text-align: center;
+}
+#ADMIN_LINEA_TITULO{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+}
+#ADMIN_LINEA_TEXTO1{
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    width: 25%;
+}
+#ADMIN_LINEA_TEXTO2{
+    position: absolute;
+    top: 30%;
+    left: 31%;
+    width: 32%;
+}
+#ADMIN_LINEA_TEXTO3{
+    position: absolute;
+    top: 30%;
+    left: 66%;
+    width: 31%;
+}
+
+#fileInput{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    color: white;
+    font-size: 2vh;
+}
+#ADMIN_TEXTO_ARCHIVO{
+    position: absolute;
+    top: 9%;
+    left: 25%;
+    color: white;
+    font-size: 3vh;
+}
+#TEXTO_PROLOG{
+    position: absolute;
+    top: 5%;
+    left: 92%;
+    font-size: 4vh;
+    color: white;
+}
+#STATUS_JSON{
+    position: absolute;
+    top: 5%;
+    left: 89%;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    font-size: 4vh;
+    border-radius: 100%;
+    color: white;
+}
