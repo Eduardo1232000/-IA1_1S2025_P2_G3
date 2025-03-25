@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+.BOTON{
+    position: absolute;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-color: transparent;
+    cursor: pointer;
+    transition: 500ms;
+    z-index: 1000;
+}
+
+
+#boton_empezar{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    background-color: rgb(40, 187, 72);
+}
+
+#boton_salir{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    background-color: #802525;
+}
+
+#boton_cambiar_camara{
+    position: absolute;
+    top: 3%;
+    left: 13%;
+    background-color: rgb(40, 187, 72);
+}
+
+#container {
+    width: 100vw;           /* 100% del ancho del viewport */
+    height: 100vh;          /* 100% del alto del viewport */
+    position: fixed;        /* Fijo para evitar desplazamiento */
+    top: 0;
+    left: 0;
+    overflow: hidden;       /* Previene scroll */
+    z-index: -1;           /* Opcional: para que quede detrás de otros elementos */
+    background: #000;       /* Fondo negro para áreas no ocupadas por la cámara */
+}

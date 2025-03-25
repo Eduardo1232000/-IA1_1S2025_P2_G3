@@ -218,7 +218,10 @@ function validar_base_json() {
                         });
 
                         document.getElementById(`boton_filtro`)?.addEventListener("click", () => {
-                            console.log("Filtro tematico no implementado");
+                            let imagen_json = "./img/"+ marcador.filtro_tematico +".png"
+                            sessionStorage.setItem("textura_personalizada",imagen_json )
+                            console.log(imagen_json)
+                            window.location.href = "filtro_tematico.html";
                         });
                     }, 500);
                 });
