@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const boton_cambiar_camara = document.querySelector("#boton_cambiar_camara");
     //sessionStorage.setItem("textura_personalizada","./img/shrek.png" )
     let imagen_tematica = sessionStorage.getItem("textura_personalizada")
-    if(imagen_tematica === "" || imagen_tematica === undefined){
+    if(imagen_tematica === "" || imagen_tematica === undefined || imagen_tematica===null){
         imagen_tematica = "./img/viejito.png"
     }
     console.log(imagen_tematica)
