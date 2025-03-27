@@ -14,10 +14,6 @@
         <label id="TEXTO_PROLOG">Prolog</label>
         <label id="STATUS_JSON"></label>
         <div id="ADMIN_DIV">
-            <button id='ADMIN_BOTON_SIGUIENTE'class="BOTON"onclick="AccionSiguiente()"> Siguiente</button>
-            <hr id="ADMIN_LINEA_TEXTO1">
-            <hr id="ADMIN_LINEA_TEXTO2">
-            <hr id="ADMIN_LINEA_TEXTO3">
 
             <label for="fileInput"id="ADMIN_TEXTO_ARCHIVO">Cargar archivo Prolog:</label>
             <input type="file" id="fileInput" accept=".pl">
@@ -26,29 +22,31 @@
             <label id="ADMIN_DESCRIPCION1"class="DESCRIPCION">
                 Administracion y Configuracion general del sistema
             </label>
-            <label id="ADMIN_TEXTO1"class="DESCRIPCION">
-                Facultades
-            </label>
-            <label id="ADMIN_TEXTO2"class="DESCRIPCION">
-                Carreras
-            </label>
-            <label id="ADMIN_TEXTO3"class="DESCRIPCION">
-                Aptitudes
-            </label>
+
             
-            
-            <div id="ADMIN_DIV_FACULTADES">
+            <select id="SELECT_LUGAR"></select>
+            <button id="BOTON_MODIFICAR"onclick="AccionModificar()">Modificar</button>
+            <button id="BOTON_AGREGAR" onclick="AccionAgregar()">Agregar Nuevo</button>
+        </div>
+        <div id="EDITAR_AGREGAR" class="oculto">
 
-            </div>
-            <div id="ADMIN_DIV_CARRERAS">
+            <label>Nombre Lugar</label>
+            <input id="nombre_lugar" class="cuadro_texto"placeholder="Ej.Lugar 1"></input>
+            <input id="multimedia_titulo"class="cuadro_texto"placeholder="Ej. Imagen 1"></input>
+            <input id="multimedia_url"class="cuadro_texto"placeholder="Ej.www.google.com"></input>
+            <input id="info_ubicacion"class="cuadro_texto"></inpur>
+            <textarea id="info_historia"class="cuadro_texto"></textarea>
+            <textarea id="info_dato_curioso"class="cuadro_texto"></textarea>
+            <input id="ubicacion_lugar"class="cuadro_texto"></input>
+            <input id="sitio_lugar"class="cuadro_texto"></input>
 
-            </div>
-            <div id="ADMIN_DIV_APTITUDES">
+            <button id="BOTON_ACCION_ATRAS" class="BOTON_ACCION_M_G" onclick="AccionAtras()">Atras</button>        
+            <button id="BOTON_ACCION_GUARDAR" class="BOTON_ACCION_M_G">Guardar</button>
+            <button id="BOTON_ACCION_MODIFICAR" class="BOTON_ACCION_M_G">Modificar</button>
 
-            </div>
         </div>
     </div>
     <script src="js/animacion_y_navegacion.js"></script> 
-    <script src="js/admin.js"></script> 
+    <script src="js/Admin.js"></script> 
 </body>
 </html>
