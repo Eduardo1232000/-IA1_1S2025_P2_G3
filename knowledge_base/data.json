@@ -1,6 +1,7 @@
 [
     {
         "index":1,
+        "ubicacion_deteccion":".deteccion/1.chichen",
         "nombre_lugar": "Chichen Itza",
         "multimedia": [
             [
