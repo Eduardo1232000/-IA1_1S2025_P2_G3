@@ -1,5 +1,6 @@
 [
     {
+        "index":1,
         "nombre_lugar": "Chichen Itza",
         "multimedia": [
             [
@@ -39,9 +40,10 @@
         },
         "sitio_web": "https://www.chichenitza.com/es",
         "ubicacion": "https://maps.app.goo.gl/jbUdYpMSkBRX84za9",
-        "filtro_tematico": "cara"
+        "filtro_tematico": "./img/cara.png"
     },
     {
+        "index":2,
         "nombre_lugar": "Machu Picchu",
         "multimedia": [
             [
@@ -60,9 +62,10 @@
         },
         "sitio_web": "https://www.perurail.com/es/destinos/machu-picchu/",
         "ubicacion": "https://maps.app.goo.gl/4SUDtg82kTz9ENCE9",
-        "filtro_tematico": "cara"
+        "filtro_tematico": "./img/cara.png"
     },
     {
+        "index":3,
         "nombre_lugar": "Petra",
         "multimedia": [
             [
@@ -118,9 +121,10 @@
         },
         "sitio_web": "https://www.visitpetra.jo/en",
         "ubicacion": "https://maps.app.goo.gl/gBEc5s1XtVvWn8SJA",
-        "filtro_tematico": "cara"
+        "filtro_tematico": "./img/cara.png"
     },
     {
+        "index":4,
         "nombre_lugar": "Gran Muralla China",
         "multimedia": [
             [
@@ -180,9 +184,10 @@
         },
         "sitio_web": "https://www.travelchinaguide.com/china_great_wall/",
         "ubicacion": "https://maps.app.goo.gl/xqkhkR5E9xNU9XGJA",
-        "filtro_tematico": "cara"
+        "filtro_tematico": "./img/cara.png"
     },
     {
+        "index":5,
         "nombre_lugar": "Coliseo Romano",
         "multimedia": [
             [
@@ -242,9 +247,10 @@
         },
         "sitio_web": "https://parcocolosseo.it/",
         "ubicacion": "https://maps.app.goo.gl/7KqkGiE68gHnXJdf8",
-        "filtro_tematico": "cara"
+        "filtro_tematico": "./img/cara.png"
     },
     {
+        "index":6,
         "nombre_lugar": "Taj Mahal",
         "multimedia": [
             [
@@ -316,9 +322,10 @@
         },
         "sitio_web": "https://www.tajmahal.gov.in/",
         "ubicacion": "https://maps.app.goo.gl/WPBaVow9cPrD1xvA7",
-        "filtro_tematico": "cara"
+        "filtro_tematico": "./img/cara.png"
     },
     {
+        "index":7,
         "nombre_lugar": "Cristo Redentor",
         "multimedia": [
             [
@@ -386,6 +393,6 @@
         },
         "sitio_web": "https://cristoredentoroficial.com.br/",
         "ubicacion": "https://maps.app.goo.gl/NAmv3cdDsQTz4LMZ6",
-        "filtro_tematico": "cara"
+        "filtro_tematico": "./img/cara.png"
     }
 ]

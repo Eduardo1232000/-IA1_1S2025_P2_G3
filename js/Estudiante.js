@@ -18,7 +18,7 @@ function validar_base_json() {
             lista_lugares.forEach((marcador) => {
                 // CREAR UNA ENTIDAD PARA ALMACENAR TODO EL CONTENIDO
                 const contenido = document.createElement('a-entity');
-                contenido.setAttribute('mindar-image-target', `targetIndex: ${contador}`);
+                contenido.setAttribute('mindar-image-target', `targetIndex: ${marcador.index}`);
 
                 // CUANDO DETECTA UNA IMAGEN
                 contenido.addEventListener('targetFound', () => {
@@ -218,7 +218,7 @@ function validar_base_json() {
                         });
 
                         document.getElementById(`boton_filtro`)?.addEventListener("click", () => {
-                            let imagen_json = "./img/"+ marcador.filtro_tematico +".png"
+                            let imagen_json = marcador.filtro_tematico
                             sessionStorage.setItem("textura_personalizada",imagen_json )
                             console.log(imagen_json)
                             window.location.href = "filtro_tematico.html";
