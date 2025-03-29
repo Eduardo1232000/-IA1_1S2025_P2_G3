@@ -1,6 +1,6 @@
 [
     {
-        "index":0,
+        "index": 0,
         "nombre_lugar": "Gran Muralla China",
         "ubicacion_deteccion": "./deteccion/1.chichen",
         "multimedia": [
@@ -36,15 +36,15 @@
         "informacion": {
             "nombre": "Chichen Itza",
             "ubicacion": "Yucatan, Mexico",
-            "historia": "Fundacion: Chichen Itza fue una ciudad maya fundada alrededor del siglo VI d.C.\n\nDesarrollo: Se convirtio en uno de los centros urbanos más importantes y prosperos de la civilizacion maya entre los siglos IX y XII, con influencias de otras culturas como la tolteca.\n\nDeclive: La ciudad comenzó a declinar alrededor del siglo XV, y para el siglo XVI ya estaba abandonada, cuando los españoles llegaron a la region.",
-            "datos_curiosos": "La pirámide de Kukulkán fue diseñada con precisión matemática, y los mayas lograron una exactitud increíble en su construcción, reflejando un vasto conocimiento de geometría y astronomía.\n\nAunque se desconoce la causa exacta de su declive, algunos expertos sugieren que la llegada de los toltecas, las luchas internas y los cambios climáticos pudieron haber influido."
+            "historia": "Fundacion: Chichen Itza fue una ciudad maya fundada alrededor del siglo VI d.C.\n\nDesarrollo: Se convirtio en uno de los centros urbanos mas importantes y prosperos de la civilizacion maya entre los siglos IX y XII, con influencias de otras culturas como la tolteca.\n\nDeclive: La ciudad comenzo a declinar alrededor del siglo XV, y para el siglo XVI ya estaba abandonada, cuando los españoles llegaron a la region.",
+            "datos_curiosos": "La piramide de Kukulkan fue diseñada con precision matematica, y los mayas lograron una exactitud increible en su construccion, reflejando un vasto conocimiento de geometria y astronomia.\n\nAunque se desconoce la causa exacta de su declive, algunos expertos sugieren que la llegada de los toltecas, las luchas internas y los cambios climaticos pudieron haber influido."
         },
         "sitio_web": "https://www.chichenitza.com/es",
         "ubicacion": "https://maps.app.goo.gl/jbUdYpMSkBRX84za9",
         "filtro_tematico": "./img/cara.png"
     },
     {
-        "index":1,
+        "index": 1,
         "nombre_lugar": "Machu Picchu",
         "ubicacion_deteccion": "./deteccion/1.chichen",
         "multimedia": [
@@ -67,7 +67,7 @@
         "filtro_tematico": "./img/cara.png"
     },
     {
-        "index":2,
+        "index": 2,
         "nombre_lugar": "Petra",
         "ubicacion_deteccion": "./deteccion/1.chichen",
         "multimedia": [
@@ -114,20 +114,20 @@
         ],
         "informacion": {
             "nombre": "Petra",
-            "ubicacion": "Cordillera Oriental del sur de Peru",
+            "ubicacion": "Ma'an, Jordania",
             "historia": "Fundada en el siglo VIII a.C. por los nabateos, Petra fue una importante ciudad comercial. Es conocida por sus templos y tumbas talladas en roca rosa.",
             "datos_curiosos": [
-                "La entrada a la ciudad es un cañón estrecho de 1.2 km llamado 'Siq'.",
-                "Su construcción principal, 'El Tesoro', se hizo famosa en la película de Indiana Jones.",
-                "El 85% de la ciudad aún no ha sido excavada."
+                "La entrada a la ciudad es un cañon estrecho de 1.2 km llamado 'Siq'.",
+                "Su construccion principal, 'El Tesoro', se hizo famosa en la pelicula de Indiana Jones.",
+                "El 85% de la ciudad aun no ha sido excavada."
             ]
         },
         "sitio_web": "https://www.visitpetra.jo/en",
-        "ubicacion": "https://maps.app.goo.gl/gBEc5s1XtVvWn8SJA",
+        "ubicacion": "https://maps.app.goo.gl/BDbnaPtS83y5917z7",
         "filtro_tematico": "./img/cara.png"
     },
     {
-        "index":3,
+        "index": 3,
         "nombre_lugar": "Gran Muralla China",
         "ubicacion_deteccion": "./deteccion/1.chichen",
         "multimedia": [
@@ -179,19 +179,19 @@
         "informacion": {
             "nombre": "Gran Muralla China",
             "ubicacion": "A lo largo del norte de China",
-            "historia": "Construida entre los siglos V a.C. y XVI d.C., la Gran Muralla tenía como propósito proteger a China de invasiones. Mide aproximadamente 21,196 km y fue construida por varias dinastías.",
+            "historia": "Construida entre los siglos V a.C. y XVI d.C., la Gran Muralla tenia como proposito proteger a China de invasiones. Mide aproximadamente 21,196 km y fue construida por varias dinastias.",
             "datos_curiosos": [
                 "No es visible desde la Luna a simple vista.",
-                "Se calcula que más de un millón de personas trabajaron en su construcción.",
+                "Se calcula que mas de un millon de personas trabajaron en su construccion.",
                 "Fue declarada Patrimonio de la Humanidad en 1987."
             ]
         },
         "sitio_web": "https://www.travelchinaguide.com/china_great_wall/",
-        "ubicacion": "https://maps.app.goo.gl/xqkhkR5E9xNU9XGJA",
+        "ubicacion": "https://maps.app.goo.gl/Df1pAcDxkDi1BRdJ7",
         "filtro_tematico": "./img/cara.png"
     },
     {
-        "index":4,
+        "index": 4,
         "nombre_lugar": "Coliseo Romano",
         "ubicacion_deteccion": "./deteccion/1.chichen",
         "multimedia": [
@@ -243,19 +243,19 @@
         "informacion": {
             "nombre": "Coliseo Romano",
             "ubicacion": "Centro de Roma, Italia",
-            "historia": "Construido en el año 80 d.C. bajo el emperador Tito, el Coliseo Romano era un anfiteatro donde se realizaban combates de gladiadores, caza de animales y espectáculos públicos.",
+            "historia": "Construido en el año 80 d.C. bajo el emperador Tito, el Coliseo Romano era un anfiteatro donde se realizaban combates de gladiadores, caza de animales y espectaculos publicos.",
             "datos_curiosos": [
-                "Podía albergar hasta 50,000 espectadores.",
-                "Poseía un complejo sistema de túneles subterráneos para los gladiadores y animales.",
+                "Podia albergar hasta 50,000 espectadores.",
+                "Poseia un complejo sistema de tuneles subterraneos para los gladiadores y animales.",
                 "Ha sobrevivido terremotos y saqueos."
             ]
         },
         "sitio_web": "https://parcocolosseo.it/",
-        "ubicacion": "https://maps.app.goo.gl/7KqkGiE68gHnXJdf8",
+        "ubicacion": "https://maps.app.goo.gl/NT9Nt7pWHhuuPMc39",
         "filtro_tematico": "./img/cara.png"
     },
     {
-        "index":5,
+        "index": 5,
         "nombre_lugar": "Taj Mahal",
         "ubicacion_deteccion": "./deteccion/1.chichen",
         "multimedia": [
@@ -287,51 +287,51 @@
             ],
             [
                 {
-                    "titulo":"video1",
+                    "titulo": "video1",
                     "link": "https://videos.pexels.com/video-files/19717370/19717370-sd_640_360_30fps.mp4"
                 },
                 {
-                    "titulo":"video2",
+                    "titulo": "video2",
                     "link": "https://videos.pexels.com/video-files/16577288/16577288-sd_360_640_30fps.mp4"
                 },
                 {
-                    "titulo":"video3",
+                    "titulo": "video3",
                     "link": "https://videos.pexels.com/video-files/28240530/12336828_640_360_30fps.mp4"
                 },
                 {
-                    "titulo":"video4",
+                    "titulo": "video4",
                     "link": "https://videos.pexels.com/video-files/30061654/12894295_360_640_60fps.mp4"
                 },
                 {
-                    "titulo":"video5",
+                    "titulo": "video5",
                     "link": "https://videos.pexels.com/video-files/30061656/12894303_360_640_60fps.mp4"
                 },
                 {
-                    "titulo":"video6",
+                    "titulo": "video6",
                     "link": "https://videos.pexels.com/video-files/18517577/18517577-sd_640_360_30fps.mp4"
                 },
                 {
-                    "titulo":"video7",
+                    "titulo": "video7",
                     "link": "https://videos.pexels.com/video-files/18286344/18286344-sd_360_640_25fps.mp4"
                 }
             ]
         ],
         "informacion": {
             "nombre": "Taj Mahal",
-            "ubicacion": "Ciudad de Agra, a orillas del río Yamuna",
-            "historia": "Construido entre 1632 y 1653 por el emperador Shah Jahan en honor a su esposa Mumtaz Mahal, el Taj Mahal es un mausoleo de mármol blanco con incrustaciones de piedras preciosas.",
+            "ubicacion": "Ciudad de Agra, a orillas del rio Yamuna",
+            "historia": "Construido entre 1632 y 1653 por el emperador Shah Jahan en honor a su esposa Mumtaz Mahal, el Taj Mahal es un mausoleo de marmol blanco con incrustaciones de piedras preciosas.",
             "datos_curiosos": [
-                "Cambia de color según la luz del día.",
-                "Se necesitaron más de 20,000 obreros para su construcción.",
-                "Es un símbolo del amor eterno."
+                "Cambia de color segun la luz del dia.",
+                "Se necesitaron mas de 20,000 obreros para su construccion.",
+                "Es un simbolo del amor eterno."
             ]
         },
         "sitio_web": "https://www.tajmahal.gov.in/",
-        "ubicacion": "https://maps.app.goo.gl/WPBaVow9cPrD1xvA7",
+        "ubicacion": "https://maps.app.goo.gl/mvFrvSZshRoDpJ7z8",
         "filtro_tematico": "./img/cara.png"
     },
     {
-        "index":6,
+        "index": 6,
         "nombre_lugar": "Cristo Redentor",
         "ubicacion_deteccion": "./deteccion/1.chichen",
         "multimedia": [
@@ -363,43 +363,419 @@
             ],
             [
                 {
-                    "titulo":"video1",
-                    "link":"https://videos.pexels.com/video-files/2829276/2829276-sd_360_640_24fps.mp4"
+                    "titulo": "video1",
+                    "link": "https://videos.pexels.com/video-files/2829276/2829276-sd_360_640_24fps.mp4"
                 },
                 {
-                    "titulo":"video2",
-                    "link":"https://videos.pexels.com/video-files/27516120/12157119_360_640_60fps.mp4"
+                    "titulo": "video2",
+                    "link": "https://videos.pexels.com/video-files/27516120/12157119_360_640_60fps.mp4"
                 },
                 {
-                    "titulo":"video3",
-                    "link":"https://videos.pexels.com/video-files/27516120/12157119_360_640_60fps.mp4"
+                    "titulo": "video3",
+                    "link": "https://videos.pexels.com/video-files/27516120/12157119_360_640_60fps.mp4"
                 },
                 {
-                    "titulo":"video4",
-                    "link":"https://videos.pexels.com/video-files/27516126/12157147_360_640_60fps.mp4"
+                    "titulo": "video4",
+                    "link": "https://videos.pexels.com/video-files/27516126/12157147_360_640_60fps.mp4"
                 },
                 {
-                    "titulo":"video5",
-                    "link":"https://videos.pexels.com/video-files/4902988/4902988-sd_640_360_25fps.mp4"
+                    "titulo": "video5",
+                    "link": "https://videos.pexels.com/video-files/4902988/4902988-sd_640_360_25fps.mp4"
                 },
                 {
-                    "titulo":"video6",
-                    "link":"https://videos.pexels.com/video-files/20276559/20276559-sd_640_360_30fps.mp4"
+                    "titulo": "video6",
+                    "link": "https://videos.pexels.com/video-files/20276559/20276559-sd_640_360_30fps.mp4"
                 }
             ]
         ],
         "informacion": {
             "nombre": "Cristo Redentor",
-            "ubicacion": "Cerro del Corcovado, Río de Janeiro",
-            "historia": "Inaugurado en 1931, el Cristo Redentor es una estatua de 30 metros de altura situada en la cima del cerro Corcovado en Río de Janeiro. Fue diseñado por el ingeniero Heitor da Silva Costa y el escultor francés Paul Landowski.",
+            "ubicacion": "Cerro del Corcovado, Rio de Janeiro",
+            "historia": "Inaugurado en 1931, el Cristo Redentor es una estatua de 30 metros de altura situada en la cima del cerro Corcovado en Rio de Janeiro. Fue diseñado por el ingeniero Heitor da Silva Costa y el escultor frances Paul Landowski.",
             "datos_curiosos": [
-                "Está hecho de hormigón armado y piedra jabón.",
+                "Esta hecho de hormigon armado y piedra jabon.",
                 "Fue construido en Francia y ensamblado en Brasil.",
-                "Su mirador ofrece una vista panorámica de Río de Janeiro."
+                "Su mirador ofrece una vista panoramica de Rio de Janeiro."
             ]
         },
-        "sitio_web": "https://cristoredentoroficial.com.br/",
-        "ubicacion": "https://maps.app.goo.gl/NAmv3cdDsQTz4LMZ6",
+        "sitio_web": "https://santuariocristoredentor.com.br/",
+        "ubicacion": "https://maps.app.goo.gl/pP8CpnmUni2xAbGv9",
+        "filtro_tematico": "./img/cara.png"
+    },
+    {
+        "index": 7,
+        "nombre_lugar": "Parque Nacional Tikal",
+        "ubicacion_deteccion": "./deteccion/1.chichen",
+        "multimedia": [
+            [
+                {
+                    "titulo": "img1",
+                    "link": "https://images.unsplash.com/photo-1508035460735-91088c495500?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VGlrYWx8ZW58MHx8MHx8fDA%3D"
+                },
+                {
+                    "titulo": "img2",
+                    "link": "https://images.unsplash.com/photo-1600207882264-605cd561ce4a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8VGlrYWx8ZW58MHx8MHx8fDA%3D"
+                },
+                {
+                    "titulo": "img3",
+                    "link": "https://images.unsplash.com/photo-1593052135997-ea813aeb2a69?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8VGlrYWx8ZW58MHx8MHx8fDA%3D"
+                },
+                {
+                    "titulo": "img4",
+                    "link": "https://images.unsplash.com/photo-1634842557213-0985d39cd1a6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fFRpa2FsfGVufDB8fDB8fHww"
+                },
+                {
+                    "titulo": "img5",
+                    "link": "https://images.unsplash.com/photo-1540858486584-5b4f72a83d99?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fFRpa2FsfGVufDB8fDB8fHww"
+                }
+            ],
+            [
+                {
+                    "titulo": "video1",
+                    "link": "https://videos.pexels.com/video-files/29721175/12778894_640_360_60fps.mp4"
+                },
+                {
+                    "titulo": "video2",
+                    "link": "https://videos.pexels.com/video-files/29721176/12778900_640_360_60fps.mp4"
+                },
+                {
+                    "titulo": "video3",
+                    "link": "https://videos.pexels.com/video-files/16416573/16416573-sd_640_360_30fps.mp4"
+                },
+                {
+                    "titulo": "video4",
+                    "link": "https://videos.pexels.com/video-files/16416574/16416574-sd_640_360_30fps.mp4"
+                },
+                {
+                    "titulo": "video5",
+                    "link": "https://videos.pexels.com/video-files/16706270/16706270-sd_640_360_30fps.mp4"
+                }
+            ]
+        ],
+        "informacion": {
+            "nombre": "Parque Nacional Tikal",
+            "ubicacion": "Peten, Guatemala",
+            "historia": "Tikal es uno de los sitios arqueologicos mayas mas importantes del mundo. Fue una de las ciudades mas influyentes de la civilizacion maya, alcanzando su apogeo entre los siglos VI y IX d.C. Sus ruinas incluyen templos impresionantes, plazas y complejos palaciegos.",
+            "datos_curiosos": [
+                "Tikal fue declarado Patrimonio de la Humanidad por la UNESCO en 1979.",
+                "Sus piramides superan los 60 metros de altura.",
+                "Es hogar de una gran diversidad de flora y fauna, incluyendo jaguares y tucanes."
+            ]
+        },
+        "sitio_web": "https://tikalnationalpark.org/",
+        "ubicacion": "https://maps.app.goo.gl/JUhhWskgprubsEzK9",
+        "filtro_tematico": "./img/cara.png"
+    },
+    {
+        "index": 8,
+        "nombre_lugar": "Antigua Guatemala",
+        "ubicacion_deteccion": "./deteccion/1.chichen",
+        "multimedia": [
+            [
+                {
+                    "titulo": "img1",
+                    "link": "https://plus.unsplash.com/premium_photo-1680100349214-45e2685d4746?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QW50aWd1YSUyMEd1YXRlbWFsYXxlbnwwfHwwfHx8MA%3D%3D"
+                },
+                {
+                    "titulo": "img2",
+                    "link": "https://images.unsplash.com/photo-1589783500222-4529ddfd87d1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QW50aWd1YSUyMEd1YXRlbWFsYXxlbnwwfHwwfHx8MA%3D%3D"
+                },
+                {
+                    "titulo": "img3",
+                    "link": "https://images.unsplash.com/photo-1628128594359-25d5e30661dd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QW50aWd1YSUyMEd1YXRlbWFsYXxlbnwwfHwwfHx8MA%3D%3D"
+                },
+                {
+                    "titulo": "img4",
+                    "link": "https://images.unsplash.com/photo-1573506858340-63218d518428?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8QW50aWd1YSUyMEd1YXRlbWFsYXxlbnwwfHwwfHx8MA%3D%3D"
+                },
+                {
+                    "titulo": "img5",
+                    "link": "https://images.unsplash.com/photo-1602120012884-6aa678fa79c7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEFudGlndWElMjBHdWF0ZW1hbGF8ZW58MHx8MHx8fDA%3D"
+                }
+            ],
+            [
+                {
+                    "titulo": "video1",
+                    "link": "https://videos.pexels.com/video-files/17658222/17658222-sd_640_360_30fps.mp4"
+                },
+                {
+                    "titulo": "video2",
+                    "link": "https://videos.pexels.com/video-files/17658223/17658223-sd_640_360_30fps.mp4"
+                },
+                {
+                    "titulo": "video3",
+                    "link": "https://videos.pexels.com/video-files/12901766/12901766-sd_640_360_24fps.mp4"
+                }
+            ]
+        ],
+        "informacion": {
+            "nombre": "Antigua Guatemala",
+            "ubicacion": "Sacatepequez, Guatemala",
+            "historia": "Antigua Guatemala fue la capital del Reino de Guatemala hasta 1776. Es famosa por su arquitectura colonial y sus calles empedradas. La ciudad ha sido reconstruida tras multiples terremotos y es un importante destino turistico.",
+            "datos_curiosos": [
+                "Fue declarada Patrimonio de la Humanidad por la UNESCO en 1979.",
+                "Durante la Semana Santa, sus procesiones y alfombras de aserrin son mundialmente famosas.",
+                "Esta rodeada por tres volcanes: Agua, Fuego y Acatenango."
+            ]
+        },
+        "sitio_web": "https://laantiguaguatemala.org/",
+        "ubicacion": "https://maps.app.goo.gl/1vLuLAif9auqQfYG8",
+        "filtro_tematico": "./img/cara.png"
+    },
+    {
+        "index": 9,
+        "nombre_lugar": "Livingston",
+        "ubicacion_deteccion": "./deteccion/1.chichen",
+        "multimedia": [
+            [
+                {
+                    "titulo": "img1",
+                    "link": "l"
+                }
+            ],
+            [
+                {
+                    "titulo": "video1",
+                    "link": "sdf"
+                }
+            ]
+        ],
+        "informacion": {
+            "nombre": "Livingston",
+            "ubicacion": "Izabal, Guatemala",
+            "historia": "Livingston es un pueblo costero con una rica herencia garifuna. Se destaca por su mezcla de culturas afrocaribeña, maya y ladina, y es accesible unicamente por barco desde Rio Dulce o Puerto Barrios.",
+            "datos_curiosos": [
+                "Livingston es famoso por su platillo tradicional, el Tapado, un caldo de mariscos con coco.",
+                "La cultura garifuna en Livingston fue declarada Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO.",
+                "Es el punto de partida hacia Playa Blanca y los Siete Altares, dos destinos turisticos populares."
+            ]
+        },
+        "sitio_web": "https://munilivingston.gob.gt/",
+        "ubicacion": "https://maps.app.goo.gl/tiXMEfbHine5ejtB6",
+        "filtro_tematico": "./img/cara.png"
+    },
+    {
+        "index": 10,
+        "nombre_lugar": "Chichicastenango y su mercado",
+        "ubicacion_deteccion": "./deteccion/1.chichen",
+        "multimedia": [
+            [
+                {
+                    "titulo": "img1",
+                    "link": "l"
+                }
+            ],
+            [
+                {
+                    "titulo": "video1",
+                    "link": "sdf"
+                }
+            ]
+        ],
+        "informacion": {
+            "nombre": "Chichicastenango y su mercado",
+            "ubicacion": "Quiche, Guatemala",
+            "historia": "Chichicastenango es famoso por su mercado indigena, donde los comerciantes mayas venden textiles, artesanias y productos agricolas. Tambien es hogar de la Iglesia de Santo Tomas, donde se mezclan creencias catolicas y mayas.",
+            "datos_curiosos": [
+                "El mercado se celebra los jueves y domingos.",
+                "El Popol Vuh, el libro sagrado de los mayas, fue descubierto en Chichicastenango.",
+                "Los rituales mayas todavia se practican en la Iglesia de Santo Tomas."
+            ]
+        },
+        "sitio_web": "https://www.visitcentroamerica.com/visitar/iglesia-santo-tomas-cerro-pascual-abaj-mercado-chichicastenango/",
+        "ubicacion": "https://maps.app.goo.gl/CpGwgSxoqK2b8hBw6",
+        "filtro_tematico": "./img/cara.png"
+    },
+    {
+        "index": 11,
+        "nombre_lugar": "Semuc Champey",
+        "ubicacion_deteccion": "./deteccion/1.chichen",
+        "multimedia": [
+            [
+                {
+                    "titulo": "img1",
+                    "link": "l"
+                }
+            ],
+            [
+                {
+                    "titulo": "video1",
+                    "link": "sdf"
+                }
+            ]
+        ],
+        "informacion": {
+            "nombre": "Semuc Champey",
+            "ubicacion": "Alta Verapaz, Guatemala",
+            "historia": "Semuc Champey es un paraiso natural con pozas de agua turquesa formadas sobre un puente de piedra caliza. Es un destino popular para nadar, hacer senderismo y explorar cuevas.",
+            "datos_curiosos": [
+                "El agua cristalina de las pozas proviene del rio Cahabon.",
+                "El mirador de Semuc Champey ofrece una vista panoramica impresionante.",
+                "Para llegar, se necesita un viaje en 4x4 por caminos montañosos."
+            ]
+        },
+        "sitio_web": "https://www.tripadvisor.es/Attraction_Review-g303868-d600477-Reviews-Semuc_Champey-Lanquin_Alta_Verapaz_Department.html",
+        "ubicacion": "https://maps.app.goo.gl/5W3M7hASPfRn6chQ8",
+        "filtro_tematico": "./img/cara.png"
+    },
+    {
+        "index": 12,
+        "nombre_lugar": "Las cuevas de Actun Kan",
+        "ubicacion_deteccion": "./deteccion/1.chichen",
+        "multimedia": [
+            [
+                {
+                    "titulo": "img1",
+                    "link": "l"
+                }
+            ],
+            [
+                {
+                    "titulo": "video1",
+                    "link": "sdf"
+                }
+            ]
+        ],
+        "informacion": {
+            "nombre": "Las cuevas de Actun Kan",
+            "ubicacion": "Peten, Guatemala",
+            "historia": "Las cuevas de Actun Kan son un sitio natural y arqueologico con formaciones de estalactitas y estalagmitas. Se cree que fueron utilizadas por los mayas para ceremonias y rituales.",
+            "datos_curiosos": [
+                "Algunas formaciones tienen formas de animales y figuras humanas.",
+                "El recorrido incluye pasadizos estrechos y grandes camaras subterraneas.",
+                "Se pueden observar petroglifos y restos de ofrendas antiguas."
+            ]
+        },
+        "sitio_web": "https://www.guatemala.com/guias/aventura/cuevas-de-actun-kan-un-misterioso-destino-natural-en-peten/",
+        "ubicacion": "https://maps.app.goo.gl/XNGwHwjSMhqKjYii8",
+        "filtro_tematico": "./img/cara.png"
+    },
+    {
+        "index": 13,
+        "nombre_lugar": "El mercado de Solola",
+        "ubicacion_deteccion": "./deteccion/1.chichen",
+        "multimedia": [
+            [
+                {
+                    "titulo": "img1",
+                    "link": "l"
+                }
+            ],
+            [
+                {
+                    "titulo": "video1",
+                    "link": "sdf"
+                }
+            ]
+        ],
+        "informacion": {
+            "nombre": "El mercado de Solola",
+            "ubicacion": "Solola, Guatemala",
+            "historia": "El mercado de Solola es uno de los mas autenticos de Guatemala, donde los indigenas mayas venden productos agricolas, textiles y artesanias en su vestimenta tradicional.",
+            "datos_curiosos": [
+                "El mercado se celebra los martes y viernes.",
+                "Es comun ver a los comerciantes usando trajes tipicos mayas.",
+                "El mercado esta ubicado en una zona montañosa con vistas al Lago Atitlan."
+            ]
+        },
+        "sitio_web": "https://www.tripadvisor.es/Attraction_Review-g1087643-d1997571-Reviews-Solola_Market-Solola_Solola_Department_Western_Highlands.html",
+        "ubicacion": "https://maps.app.goo.gl/rNduqpdFqamgSTDc7",
+        "filtro_tematico": "./img/cara.png"
+    },
+    {
+        "index": 14,
+        "nombre_lugar": "El Crater Azul",
+        "ubicacion_deteccion": "./deteccion/1.chichen",
+        "multimedia": [
+            [
+                {
+                    "titulo": "img1",
+                    "link": "l"
+                }
+            ],
+            [
+                {
+                    "titulo": "video1",
+                    "link": "sdf"
+                }
+            ]
+        ],
+        "informacion": {
+            "nombre": "El Crater Azul",
+            "ubicacion": "Peten, Guatemala",
+            "historia": "El Crater Azul es una fuente natural de agua cristalina rodeada de exuberante vegetacion. Su color azul intenso se debe a la filtracion de minerales y la pureza del agua.",
+            "datos_curiosos": [
+                "Es accesible solo por lancha desde el rio La Pasion.",
+                "El agua es tan clara que se pueden ver los peces nadando a gran profundidad.",
+                "Es un sitio ideal para nadar y hacer snorkel."
+            ]
+        },
+        "sitio_web": "https://aprende.guatemala.com/historia/geografia/crater-azul-peten-guatemala/",
+        "ubicacion": "https://maps.app.goo.gl/XuDF57WxKhjdHpaT8",
+        "filtro_tematico": "./img/cara.png"
+    },
+    {
+        "index": 15,
+        "nombre_lugar": "Isla Flores",
+        "ubicacion_deteccion": "./deteccion/1.chichen",
+        "multimedia": [
+            [
+                {
+                    "titulo": "img1",
+                    "link": "l"
+                }
+            ],
+            [
+                {
+                    "titulo": "video1",
+                    "link": "sdf"
+                }
+            ]
+        ],
+        "informacion": {
+            "nombre": "Isla Flores",
+            "ubicacion": "Peten, Guatemala",
+            "historia": "Flores es una isla en el Lago Peten Itza con calles adoquinadas y casas de colores. Fue la ultima ciudad maya en ser conquistada por los españoles en 1697.",
+            "datos_curiosos": [
+                "Es un punto de partida para visitar Tikal.",
+                "Tiene una vida nocturna vibrante con bares y restaurantes.",
+                "Se pueden hacer paseos en bote por el lago."
+            ]
+        },
+        "sitio_web": "https://www.guatemala.com/noticias/sociedad/isla-flores-peten-uno-los-pueblos-mas-pintorescos-del-mundo.html/",
+        "ubicacion": "https://maps.app.goo.gl/dcg5beiPjwQEgmmD9",
+        "filtro_tematico": "./img/cara.png"
+    },
+    {
+        "index": 16,
+        "nombre_lugar": "Lago Atitlan",
+        "ubicacion_deteccion": "./deteccion/1.chichen",
+        "multimedia": [
+            [
+                {
+                    "titulo": "img1",
+                    "link": "l"
+                }
+            ],
+            [
+                {
+                    "titulo": "video1",
+                    "link": "sdf"
+                }
+            ]
+        ],
+        "informacion": {
+            "nombre": "Lago Atitlan",
+            "ubicacion": "Solola, Guatemala",
+            "historia": "El Lago Atitlan es un lago de origen volcanico rodeado por tres volcanes: San Pedro, Atitlan y Toliman. Su belleza ha sido admirada por viajeros de todo el mundo, incluido el escritor Aldous Huxley.",
+            "datos_curiosos": [
+                "El lago tiene mas de 340 metros de profundidad, siendo el mas profundo de Centroamerica.",
+                "Hay 12 pueblos alrededor del lago, cada uno con el nombre de un apostol biblico.",
+                "Es un destino popular para actividades como kayak, senderismo y buceo."
+            ]
+        },
+        "sitio_web": "https://www.visitcentroamerica.com/visitar/lago-atitlan-pueblos/",
+        "ubicacion": "https://maps.app.goo.gl/Snzo6cPsWKU8VgWJA",
         "filtro_tematico": "./img/cara.png"
     }
 ]
