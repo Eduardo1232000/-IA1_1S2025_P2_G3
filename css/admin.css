@@ -306,6 +306,11 @@ body.aparecer {
     left: 70%;
     width: 27%;
 }
+#filtro_tematico{
+    top: 90%;
+    left: 45%;
+    width: 27%;
+}
 
 #ubicacion_lugar{
     top: 80%;

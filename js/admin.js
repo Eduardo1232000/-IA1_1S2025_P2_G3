@@ -56,6 +56,7 @@ function asignarValoresFormulario(lugar) {
     document.getElementById("info_dato_curioso").value = lugar.informacion.datos_curiosos;
     document.getElementById("ubicacion_lugar").value = lugar.ubicacion;
     document.getElementById("sitio_lugar").value = lugar.sitio_web;
+    document.getElementById("filtro_tematico").value = lugar.filtro_tematico;
 }
 
 // Función para cargar el archivo JSON
@@ -97,6 +98,7 @@ function LimpiarForm() {
     document.getElementById("info_dato_curioso").value = "";
     document.getElementById("ubicacion_lugar").value = "";
     document.getElementById("sitio_lugar").value = "";
+    document.getElementById("filtro_tematico").value = "";
 }
 
 // Función para agregar un nuevo lugar
@@ -127,7 +129,7 @@ function guardarLugar() {
         },
         "sitio_web": document.getElementById("sitio_lugar").value,
         "ubicacion": document.getElementById("ubicacion_lugar").value,
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": document.getElementById("filtro_tematico").value,
     };
 
     lista_lugares.push(nuevoLugar);
@@ -178,6 +180,7 @@ function cargarDatosLugarEnFormulario(lugar) {
     document.getElementById("info_dato_curioso").value = lugar.informacion.datos_curiosos;
     document.getElementById("ubicacion_lugar").value = lugar.ubicacion;
     document.getElementById("sitio_lugar").value = lugar.sitio_web;
+    document.getElementById("filtro_tematico").value = lugar.filtro_tematico;
 }
 
 function AccionModificar() {
@@ -201,6 +204,7 @@ function guardarModificacion() {
     selectedLugar.informacion.datos_curiosos = document.getElementById("info_dato_curioso").value;
     selectedLugar.ubicacion = document.getElementById("ubicacion_lugar").value;
     selectedLugar.sitio_web = document.getElementById("sitio_lugar").value;
+    selectedLugar.filtro_tematico = document.getElementById("filtro_tematico").value;
 
     // Guardar el lugar modificado en la lista
     let listaLugares = JSON.parse(sessionStorage.getItem("JSON_DATA")) || [];
