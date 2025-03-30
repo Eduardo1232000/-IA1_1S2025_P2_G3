@@ -1,85 +1,75 @@
-let opcion =""
-let nombre = ""
-let filtro_tematico = ""
-let multimedia = ""
-let informacion = ""
-let sitio_web = ""
-let ubicacion_mapa = ""
+let jsonData = "", lista_lugares = [];
+let lugarActual = {};
 
-
-let jsonData = "";
+// Función para cargar y validar JSON
 window.onload = function () {
     validar_base_json();
 };
+
+// Validación del JSON en sessionStorage
 function validar_base_json() {
     try {
         jsonData = sessionStorage.getItem("JSON_DATA");
-        if (jsonData === null) {
+        if (!jsonData) {
             console.log("No hay JSON almacenado!");
-        } else {
-            console.log("HAY JSON ALMACENADO");
-            //console.log(jsonData);
-            document.getElementById("STATUS_JSON").style.backgroundColor = "green";
-
-            let contador = 0;
-            let lista_lugares = JSON.parse(jsonData);
-            let option = document.createElement("option");
-                option.value = -1; 
-                option.textContent = "Seleccione un Lugar"; 
-                document.getElementById("SELECT_LUGAR").appendChild(option);
-            lista_lugares.forEach((marcador) => {
-                let option = document.createElement("option");
-                option.value = marcador.index; // El valor que tendrá la opción
-                option.textContent = marcador.nombre_lugar; // El texto que se mostrará en el select
-                // Agregar el option al select
-                document.getElementById("SELECT_LUGAR").appendChild(option);
-            });
-            document.getElementById("SELECT_LUGAR").addEventListener("change", () => {
-                let select = document.getElementById("SELECT_LUGAR");
-                let selectedIndex = select.value; // Obtener el valor del select (index seleccionado)
-                
-                // Encontrar el objeto que corresponde al índice seleccionado
-                selectedLugar = lista_lugares.find(marcador => marcador.index == selectedIndex);
-        
-                // Guardar la información en las variables
-                if (selectedLugar) {
-                    nombre = selectedLugar.nombre_lugar;
-                    informacion = selectedLugar.informacion;
-                    multimedia = selectedLugar.multimedia;
-                    sitio_web = selectedLugar.sitio_web;
-                    ubicacion_mapa = selectedLugar.ubicacion;
-                    filtro_tematico = selectedLugar.filtro_tematico
-                    console.log(nombre, informacion, multimedia, sitio_web, ubicacion_mapa, filtro_tematico)
-
-                } else {
-                    console.log("No se seleccionó ningún lugar válido.");
-                }})
-
-
-
-
+            return;
         }
+        console.log("HAY JSON ALMACENADO");
+        document.getElementById("STATUS_JSON").style.backgroundColor = "green";
+        lista_lugares = JSON.parse(jsonData);
+        llenarSelectLugares();
     } catch (error) {
-        console.log("ERROR AL OBTENER JSON");
-        console.log(error);
+        console.log("ERROR AL OBTENER JSON", error);
     }
 }
 
+// Llenar el dropdown de lugares
+function llenarSelectLugares() {
+    const select = document.getElementById("SELECT_LUGAR");
+    select.innerHTML = "<option value='-1'>Seleccione un Lugar</option>"; // Limpiar y agregar opción predeterminada
+    lista_lugares.forEach(marcador => {
+        const option = document.createElement("option");
+        option.value = marcador.index;
+        option.textContent = marcador.nombre_lugar;
+        select.appendChild(option);
+    });
+    select.addEventListener("change", onLugarSelect);
+}
+
+// Función para manejar la selección de lugar
+function onLugarSelect() {
+    const selectedIndex = document.getElementById("SELECT_LUGAR").value;
+    lugarActual = lista_lugares.find(marcador => marcador.index == selectedIndex) || {};
+    if (lugarActual.index === undefined) {
+        console.log("No se seleccionó ningún lugar válido.");
+        return;
+    }
+    // Asignar valores del lugar seleccionado
+    asignarValoresFormulario(lugarActual);
+}
+
+// Asignar valores al formulario
+function asignarValoresFormulario(lugar) {
+    document.getElementById("nombre_lugar").value = lugar.nombre_lugar;
+    document.getElementById("info_ubicacion").value = lugar.informacion.ubicacion;
+    document.getElementById("info_historia").value = lugar.informacion.historia;
+    document.getElementById("info_dato_curioso").value = lugar.informacion.datos_curiosos;
+    document.getElementById("ubicacion_lugar").value = lugar.ubicacion;
+    document.getElementById("sitio_lugar").value = lugar.sitio_web;
+}
+
+// Función para cargar el archivo JSON
 document.getElementById('fileInput').addEventListener('change', function (event) {
     const file = event.target.files[0];
     if (!file) return;
-
     const reader = new FileReader();
     reader.onload = function (e) {
         try {
             jsonData = e.target.result;
-            sessionData = JSON.parse(jsonData);
-
+            lista_lugares = JSON.parse(jsonData);
             console.log("EXITO AL CARGAR JSON");
-            console.log(sessionData);
-            document.getElementById("STATUS_JSON").style.backgroundColor = "green";
-
             sessionStorage.setItem("JSON_DATA", jsonData);
+            document.getElementById("STATUS_JSON").style.backgroundColor = "green";
         } catch (error) {
             console.log("Error al cargar el JSON: " + error);
         }
@@ -87,8 +77,9 @@ document.getElementById('fileInput').addEventListener('change', function (event)
     reader.readAsText(file);
 });
 
+// Guardar JSON a archivo
 function guardarJson() {
-    const jsonString = JSON.stringify(sessionData, null, 2);
+    const jsonString = JSON.stringify(lista_lugares, null, 2);
     const blob = new Blob([jsonString], { type: "application/json" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
@@ -96,51 +87,133 @@ function guardarJson() {
     a.click();
 }
 
-
-function AccionSiguiente() {
-    alert("No Implementado")
+// Función para limpiar el formulario
+function LimpiarForm() {
+    document.getElementById("nombre_lugar").value = "";
+    document.getElementById("multimedia_titulo").value = "";
+    document.getElementById("multimedia_url").value = "";
+    document.getElementById("info_ubicacion").value = "";
+    document.getElementById("info_historia").value = "";
+    document.getElementById("info_dato_curioso").value = "";
+    document.getElementById("ubicacion_lugar").value = "";
+    document.getElementById("sitio_lugar").value = "";
 }
 
-function AccionModificar() {
-    let select = document.getElementById("SELECT_LUGAR");
-    let selectedIndex = select.value;
-    console.log(selectedIndex)
-    if(selectedIndex == -1){
-        alert("Seleccione un lugar")
-        return
-    }
-    document.getElementById("ADMIN_DIV").className = "oculto"
-    document.getElementById("EDITAR_AGREGAR").classList.remove("oculto");
-    document.getElementById("BOTON_ACCION_GUARDAR").className = "oculto"
-
-    document.getElementById("nombre_lugar").value = nombre
-    document.getElementById("info_ubicacion").value = informacion.ubicacion
-    document.getElementById("info_historia").value = informacion.historia
-    document.getElementById("info_dato_curioso").value = informacion.datos_curiosos
-    document.getElementById("ubicacion_lugar").value = ubicacion_mapa
-    document.getElementById("sitio_lugar").value = sitio_web
-    document.getElementById("nombre_lugar").value = nombre
-    document.getElementById("nombre_lugar").value = nombre
-}
-
+// Función para agregar un nuevo lugar
 function AccionAgregar() {
-    document.getElementById("ADMIN_DIV").className = "oculto"
+    document.getElementById("ADMIN_DIV").classList.add("oculto");
     document.getElementById("EDITAR_AGREGAR").classList.remove("oculto");
-    document.getElementById("BOTON_ACCION_MODIFICAR").className = "oculto"
+    LimpiarForm();
+    document.getElementById("BOTON_ACCION_MODIFICAR").classList.add("oculto");
+}
 
-    document.getElementById("nombre_lugar").value = ""
-    document.getElementById("info_ubicacion").value = ""
-    document.getElementById("info_historia").value = ""
-    document.getElementById("info_dato_curioso").value = ""
-    document.getElementById("ubicacion_lugar").value = ""
-    document.getElementById("sitio_lugar").value = ""
-    document.getElementById("nombre_lugar").value = ""
-    document.getElementById("nombre_lugar").value = ""
+// Función para guardar un lugar
+function guardarLugar() {
+    const nuevoLugar = {
+        "index": obtenerNuevoIndex(),
+        "nombre_lugar": document.getElementById("nombre_lugar").value,
+        "ubicacion_deteccion": document.getElementById("ubicacion_lugar").value,
+        "multimedia": [
+            [{
+                "titulo": document.getElementById("multimedia_titulo").value,
+                "link": document.getElementById("multimedia_url").value
+            }]
+        ],
+        "informacion": {
+            "nombre": document.getElementById("nombre_lugar").value,
+            "ubicacion": document.getElementById("info_ubicacion").value,
+            "historia": document.getElementById("info_historia").value,
+            "datos_curiosos": document.getElementById("info_dato_curioso").value
+        },
+        "sitio_web": document.getElementById("sitio_lugar").value,
+        "ubicacion": document.getElementById("ubicacion_lugar").value,
+        "filtro_tematico": "./img/cara.png"
+    };
+
+    lista_lugares.push(nuevoLugar);
+    sessionStorage.setItem("JSON_DATA", JSON.stringify(lista_lugares));
+
+    console.log("Lugar guardado:", nuevoLugar);
+    alert("Lugar agregado exitosamente.");
+    LimpiarForm();
+}
+
+// Obtener el índice para el nuevo lugar
+function obtenerNuevoIndex() {
+    const ultimoLugar = lista_lugares[lista_lugares.length - 1];
+    return ultimoLugar ? ultimoLugar.index + 1 : 0;
 }
 
 function AccionAtras() {
     document.getElementById("ADMIN_DIV").classList.remove("oculto");
-    document.getElementById("EDITAR_AGREGAR").className = "oculto"
-    document.getElementById("BOTON_ACCION_MODIFICAR").className = "oculto"
+    document.getElementById("EDITAR_AGREGAR").classList.add("oculto");
+    document.getElementById("BOTON_ACCION_MODIFICAR").classList.remove("oculto");
 }
 
+
+
+
+function obtenerLugarSeleccionado() {
+    let select = document.getElementById("SELECT_LUGAR");
+    let selectedIndex = select.value;
+    if (selectedIndex == -1) {
+        alert("Seleccione un lugar");
+        return null;
+    }
+    return lista_lugares.find(marcador => marcador.index == selectedIndex);
+}
+
+function mostrarFormularioEdicion() {
+    document.getElementById("ADMIN_DIV").classList.add("oculto");
+    document.getElementById("EDITAR_AGREGAR").classList.remove("oculto");
+    document.getElementById("BOTON_ACCION_MODIFICAR").classList.remove("oculto");
+}
+
+function cargarDatosLugarEnFormulario(lugar) {
+    document.getElementById("nombre_lugar").value = lugar.nombre_lugar;
+    document.getElementById("multimedia_titulo").value = lugar.multimedia[0][0].titulo;
+    document.getElementById("multimedia_url").value = lugar.multimedia[0][0].link;
+    document.getElementById("info_ubicacion").value = lugar.informacion.ubicacion;
+    document.getElementById("info_historia").value = lugar.informacion.historia;
+    document.getElementById("info_dato_curioso").value = lugar.informacion.datos_curiosos;
+    document.getElementById("ubicacion_lugar").value = lugar.ubicacion;
+    document.getElementById("sitio_lugar").value = lugar.sitio_web;
+}
+
+function AccionModificar() {
+    let selectedLugar = obtenerLugarSeleccionado();
+    if (!selectedLugar) return;
+
+    mostrarFormularioEdicion();
+    cargarDatosLugarEnFormulario(selectedLugar);
+}
+
+function guardarModificacion() {
+    let selectedLugar = obtenerLugarSeleccionado();
+    if (!selectedLugar) return;
+
+    // Obtener los nuevos valores de los campos
+    selectedLugar.nombre_lugar = document.getElementById("nombre_lugar").value;
+    selectedLugar.multimedia[0][0].titulo = document.getElementById("multimedia_titulo").value;
+    selectedLugar.multimedia[0][0].link = document.getElementById("multimedia_url").value;
+    selectedLugar.informacion.ubicacion = document.getElementById("info_ubicacion").value;
+    selectedLugar.informacion.historia = document.getElementById("info_historia").value;
+    selectedLugar.informacion.datos_curiosos = document.getElementById("info_dato_curioso").value;
+    selectedLugar.ubicacion = document.getElementById("ubicacion_lugar").value;
+    selectedLugar.sitio_web = document.getElementById("sitio_lugar").value;
+
+    // Guardar el lugar modificado en la lista
+    let listaLugares = JSON.parse(sessionStorage.getItem("JSON_DATA")) || [];
+
+    let index = listaLugares.findIndex(lugar => lugar.index == selectedLugar.index);
+    if (index !== -1) {
+        listaLugares[index] = selectedLugar; // Reemplazar el lugar en la lista
+        sessionStorage.setItem("JSON_DATA", JSON.stringify(listaLugares)); // Guardar la lista actualizada en sessionStorage
+        alert("Lugar modificado exitosamente.");
+    }
+
+    // Limpiar el formulario y regresar a la vista principal
+    LimpiarForm();
+    document.getElementById("ADMIN_DIV").classList.remove("oculto");
+    document.getElementById("EDITAR_AGREGAR").classList.add("oculto");
+}
