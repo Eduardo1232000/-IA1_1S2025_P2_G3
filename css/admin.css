@@ -337,3 +337,15 @@ body.aparecer {
     cursor: pointer;
     background-color: rgb(93, 12, 12);
 }
+
+
+#BOTON_ACCION_AGREGARCAMPO{
+    top: 90%;
+    left: 75%;
+    background-color: #0a6633;
+    transition: 500ms;
+}
+#BOTON_ACCION_AGREGARCAMPO:hover{
+    cursor: pointer;
+    background-color: rgb(93, 12, 12);
+}

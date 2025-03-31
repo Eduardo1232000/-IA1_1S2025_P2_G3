@@ -111,16 +111,26 @@ function AccionAgregar() {
 
 // Función para guardar un lugar
 function guardarLugar() {
+    
+    let multimedia = [];
+    let multimediaTitles = document.querySelectorAll("#multimedia_titulo");
+    let multimediaUrls = document.querySelectorAll("#multimedia_url");
+
+    for (let i = 0; i < multimediaTitles.length; i++) {
+        let titulo = multimediaTitles[i].value.trim(); // Usar .value para obtener el texto dentro de textarea
+        let url = multimediaUrls[i].value.trim();
+        if (titulo && url) { // Solo agregar si ambos campos tienen valor
+            multimedia.push({
+                titulo: titulo,
+                link: url
+            });
+        }
+    }
     const nuevoLugar = {
         "index": obtenerNuevoIndex(),
         "nombre_lugar": document.getElementById("nombre_lugar").value,
         "ubicacion_deteccion": document.getElementById("ubicacion_lugar").value,
-        "multimedia": [
-            [{
-                "titulo": document.getElementById("multimedia_titulo").value,
-                "link": document.getElementById("multimedia_url").value
-            }]
-        ],
+        multimedia: multimedia,
         "informacion": {
             "nombre": document.getElementById("nombre_lugar").value,
             "ubicacion": document.getElementById("info_ubicacion").value,
@@ -172,9 +182,23 @@ function mostrarFormularioEdicion() {
 }
 
 function cargarDatosLugarEnFormulario(lugar) {
+    // Asignar valores a los campos principales
     document.getElementById("nombre_lugar").value = lugar.nombre_lugar;
-    document.getElementById("multimedia_titulo").value = lugar.multimedia[0][0].titulo;
-    document.getElementById("multimedia_url").value = lugar.multimedia[0][0].link;
+    // Limpiar los campos multimedia antes de llenarlos, pero no borrar los campos generados
+    const container = document.getElementById('multimedia_fields');
+    container.innerHTML = ''; // Limpiar los campos multimedia actuales
+    // Agregar los campos multimedia desde los datos existentes (si hay)
+    if (lugar.multimedia && lugar.multimedia.length > 0) {
+        lugar.multimedia.forEach(item => {
+            console.log(item.titulo)
+            agregarCampoMultimedia(item.titulo, item.link);
+        });
+    } else {
+        // Si no hay multimedia, agregar un campo vacío por defecto
+        agregarCampoMultimedia('', '');
+    }
+
+    // Asignar valores a los otros campos del formulario
     document.getElementById("info_ubicacion").value = lugar.informacion.ubicacion;
     document.getElementById("info_historia").value = lugar.informacion.historia;
     document.getElementById("info_dato_curioso").value = lugar.informacion.datos_curiosos;
@@ -194,30 +218,53 @@ function AccionModificar() {
 function guardarModificacion() {
     let selectedLugar = obtenerLugarSeleccionado();
     if (!selectedLugar) return;
-
     // Obtener los nuevos valores de los campos
     selectedLugar.nombre_lugar = document.getElementById("nombre_lugar").value;
-    selectedLugar.multimedia[0][0].titulo = document.getElementById("multimedia_titulo").value;
-    selectedLugar.multimedia[0][0].link = document.getElementById("multimedia_url").value;
+    // Obtener las entradas multimedia (puede haber múltiples)
+    selectedLugar.multimedia = [];
+    let multimediaTítulos = document.getElementsByName("multimedia_titulo");
+    let multimediaURLs = document.getElementsByName("multimedia_url");
+
+    for (let i = 0; i < multimediaTítulos.length; i++) {
+        let titulo = multimediaTítulos[i].value.trim(); // Usar .value para obtener el texto dentro de textarea
+        let url = multimediaURLs[i].value.trim();
+        if (titulo && url) {  // Solo agregar si ambos campos están completos
+            selectedLugar.multimedia.push({ titulo: titulo, link: url });
+        }
+    }
+
+
     selectedLugar.informacion.ubicacion = document.getElementById("info_ubicacion").value;
     selectedLugar.informacion.historia = document.getElementById("info_historia").value;
     selectedLugar.informacion.datos_curiosos = document.getElementById("info_dato_curioso").value;
     selectedLugar.ubicacion = document.getElementById("ubicacion_lugar").value;
     selectedLugar.sitio_web = document.getElementById("sitio_lugar").value;
     selectedLugar.filtro_tematico = document.getElementById("filtro_tematico").value;
-
-    // Guardar el lugar modificado en la lista
+    // Obtener la lista de lugares desde sessionStorage
     let listaLugares = JSON.parse(sessionStorage.getItem("JSON_DATA")) || [];
-
-    let index = listaLugares.findIndex(lugar => lugar.index == selectedLugar.index);
+    // Encontrar el índice del lugar seleccionado
+    let index = listaLugares.findIndex(lugar => lugar.index === selectedLugar.index);
     if (index !== -1) {
-        listaLugares[index] = selectedLugar; // Reemplazar el lugar en la lista
+        listaLugares[index] = selectedLugar; // Reemplazar el lugar en la lista con los nuevos valores
         sessionStorage.setItem("JSON_DATA", JSON.stringify(listaLugares)); // Guardar la lista actualizada en sessionStorage
         alert("Lugar modificado exitosamente.");
+    } else {
+        alert("No se pudo encontrar el lugar en la lista.");
     }
-
     // Limpiar el formulario y regresar a la vista principal
     LimpiarForm();
     document.getElementById("ADMIN_DIV").classList.remove("oculto");
     document.getElementById("EDITAR_AGREGAR").classList.add("oculto");
+}
+
+function agregarCampoMultimedia(titulo = '', url = '') {
+    let container = document.getElementById('multimedia_fields');
+    let newPair = document.createElement('div');
+    newPair.classList.add('multimedia_pair');
+
+    newPair.innerHTML = `
+        <textarea id="multimedia_titulo" class="cuadro_texto" placeholder="Título Multimedia">${titulo}</textarea>
+        <textarea id="multimedia_url" class="cuadro_texto" placeholder="URL Multimedia">${url}</textarea>
+    `;
+    container.appendChild(newPair);
 }
