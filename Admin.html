@@ -33,16 +33,17 @@
         <div id="EDITAR_AGREGAR" class="oculto">
 
             <input id="nombre_lugar" class="cuadro_texto" placeholder="Ej.Lugar 1"></input>
-            <div id="multimedia_fields">
-                <div class="multimedia_pair">
-                    <textarea id="multimedia_titulo" class="cuadro_texto" placeholder="Título Y URLMultimedia"></textarea>
-                    <textarea id="multimedia_url" class="cuadro_texto" placeholder="URL Multimedia"></textarea>
-                </div>
-            </div>
             <button id="BOTON_ACCION_AGREGARCAMPO" class="BOTON_ACCION_M_G" onclick="agregarCampoMultimedia()">Agregar Otro Multimedia</button>
-
-
-
+            <label id="label_nombre">Nombre</label>
+            <label id="label_ubicacion">Ubicacion</label>
+            <label id="label_historia">Historia</label>
+            <label id="label_datos">Datos Curiosos</label>
+            <label id="label_link_ubicacion">Link Ubicacion</label>
+            <label id="label_link_sitio">Sitio Web</label>
+            <label id="label_titulo_filtro">Filtro Tematico</label>
+            <label id="label_videos">Videos</label>
+            <label id="label_imagenes">Imagenes</label>
+            <label id="label_ubi_img">Ubicacion Imagen Deteccion</label>
 
             <input id="info_ubicacion" class="cuadro_texto" placeholder="Informacion ubicacion"></input>
             <textarea id="info_historia" class="cuadro_texto" placeholder="Informacioni historia"></textarea>
@@ -50,10 +51,24 @@
             <input id="ubicacion_lugar" class="cuadro_texto" placeholder="Ubicacion del lugar"></input>
             <input id="sitio_lugar" class="cuadro_texto" placeholder="Sitio lugar"></input>
             <input id="filtro_tematico" class="cuadro_texto" placeholder="Filtro"></input>
+            <input id="ubifiltro" class="cuadro_texto" placeholder="link o ruta"></input>
+
+
+            <input id="multimedia_titulo" class="cuadro_texto" placeholder="Título Imagen Ej.imagen1"></input>
+            <input id="multimedia_url" class="cuadro_texto" placeholder="URL imagen Ej. www.google.com"></input>
+
+            <input id="titulo_vid" class="cuadro_texto" placeholder="Título Video Ej. Video1"></input>
+            <input id="link_vid" class="cuadro_texto" placeholder="URL Video Ej. www.google.com"></input>
+
+            <button id="agregar_nueva_img" onclick="agregar_nueva_imagen()">Agregar</button>
+            <button id="agregar_nuevo_vid" onclick="agregar_nuevo_video()">Agregar</button>
+
+            <div id="conjunto_imagenes"></div>
+            <div id="conjunto_videos"></div>
 
             <button id="BOTON_ACCION_ATRAS" class="BOTON_ACCION_M_G" onclick="AccionAtras()">Atras</button>
-            <button id="BOTON_ACCION_GUARDAR" class="BOTON_ACCION_M_G" onclick="guardarLugar()">Guardar</button>
-            <button id="BOTON_ACCION_MODIFICAR" class="BOTON_ACCION_M_G" onclick="guardarModificacion()">Guardar Cambios</button>
+            <button id="BOTON_ACCION_GUARDAR" class="BOTON_ACCION_M_G" onclick="agregar_nuevo_lugar()">Guardar</button>
+            <button id="BOTON_ACCION_MODIFICAR" class="BOTON_ACCION_M_G" onclick="modificar_lugar()">Guardar Cambios</button>
 
         </div>
     </div>
