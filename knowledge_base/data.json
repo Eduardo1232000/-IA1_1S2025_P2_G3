@@ -97,7 +97,7 @@
         },
         "sitio_web": "https://www.perurail.com/es/destinos/machu-picchu/",
         "ubicacion": "https://maps.app.goo.gl/4SUDtg82kTz9ENCE9",
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": "./img/cara1.png"
     },
     {
         "index": 2,
@@ -153,7 +153,7 @@
         },
         "sitio_web": "https://www.visitpetra.jo/en",
         "ubicacion": "https://maps.app.goo.gl/BDbnaPtS83y5917z7",
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": "./img/cara2.png"
     },
     {
         "index": 3,
@@ -213,7 +213,7 @@
         },
         "sitio_web": "https://www.travelchinaguide.com/china_great_wall/",
         "ubicacion": "https://maps.app.goo.gl/Df1pAcDxkDi1BRdJ7",
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": "./img/cara3.png"
     },
     {
         "index": 4,
@@ -273,7 +273,7 @@
         },
         "sitio_web": "https://parcocolosseo.it/",
         "ubicacion": "https://maps.app.goo.gl/NT9Nt7pWHhuuPMc39",
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": "./img/cara4.png"
     },
     {
         "index": 5,
@@ -345,7 +345,7 @@
         },
         "sitio_web": "https://www.tajmahal.gov.in/",
         "ubicacion": "https://maps.app.goo.gl/mvFrvSZshRoDpJ7z8",
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": "./img/cara5.png"
     },
     {
         "index": 6,
@@ -413,7 +413,7 @@
         },
         "sitio_web": "https://santuariocristoredentor.com.br/",
         "ubicacion": "https://maps.app.goo.gl/pP8CpnmUni2xAbGv9",
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": "./img/cara6.png"
     },
     {
         "index": 7,
@@ -473,7 +473,7 @@
         },
         "sitio_web": "https://tikalnationalpark.org/",
         "ubicacion": "https://maps.app.goo.gl/JUhhWskgprubsEzK9",
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": "./img/cara7.png"
     },
     {
         "index": 8,
@@ -525,7 +525,7 @@
         },
         "sitio_web": "https://laantiguaguatemala.org/",
         "ubicacion": "https://maps.app.goo.gl/1vLuLAif9auqQfYG8",
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": "./img/cara8.png"
     },
     {
         "index": 9,
@@ -890,6 +890,6 @@
         },
         "sitio_web": "https://www.visitcentroamerica.com/visitar/lago-atitlan-pueblos/",
         "ubicacion": "https://maps.app.goo.gl/Snzo6cPsWKU8VgWJA",
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": ".|"
     }
 ]
