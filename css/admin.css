@@ -244,6 +244,23 @@ body.aparecer {
     background-color:#092b4b ;
 }
 
+#BOTON_ELIMINAR{
+    position: absolute;
+    top: 90%;
+    left: 67%;
+    border-radius: 10px;
+    width: 10%;
+    height: 8%;
+    background-color:#660a0a;
+    color: white;
+    font-weight: bold;
+    transition-duration: 500ms;
+}
+#BOTON_ELIMINAR:hover{
+    cursor: pointer;
+    background-color:#4b0909 ;
+}
+
 .BOTON_ACCION_M_G{
     position: absolute;
     top: 90%;

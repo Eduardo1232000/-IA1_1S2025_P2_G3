@@ -1,6 +1,7 @@
 let jsonData = "", lista_lugares = [];
 let lugarActual = {};
 let lugarseleccionado = ""
+let indice_lugar = -1
 
 // Función para cargar y validar JSON
 window.onload = function () {
@@ -70,6 +71,7 @@ function llenarSelectLugares() {
 // Cuando se selecciona un lugar
 function onLugarSelect() {
     const selectedIndex = document.getElementById("SELECT_LUGAR").value;
+    indice_lugar = document.getElementById("SELECT_LUGAR").value;
     lugarActual = lista_lugares.find(marcador => marcador.index == selectedIndex) || {};
     if (lugarActual.index === undefined) {
         console.log("No se seleccionó ningún lugar válido.");
@@ -188,6 +190,28 @@ function AccionModificar() {
         }
         mostrarFormularioEdicion();
         asignarValoresFormulario(lugarActual);
+    } catch (error) {
+        alert("ERROR")
+        return;
+    }
+}
+
+function AccionEliminar() {
+    console.log(lugarActual.index)
+    try {
+        
+        const indexLista = lista_lugares.findIndex(lugar => Number(lugar.index) === Number(indice_lugar));
+        console.log(indexLista , indice_lugar)
+        if (indexLista === -1) {
+            alert("Seleccione un lugar valido")
+            return;
+        }
+        lista_lugares.splice(indexLista, 1);
+
+        
+        console.log(lista_lugares)
+        sessionStorage.setItem("JSON_DATA", JSON.stringify(lista_lugares));
+        llenarSelectLugares()
     } catch (error) {
         alert("ERROR")
         return;
@@ -338,7 +362,6 @@ function agregar_nuevo_lugar() {
 
 function modificar_lugar() {
     guardar_valores_json()
-    lista_lugares
     const indexLista = lista_lugares.findIndex(lugar => lugar.index === lugarActual.index);
 
     if (indexLista !== -1) {
