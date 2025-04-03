@@ -328,8 +328,7 @@ function guardar_valores_json() {
         { id: "info_historia", mensaje: "Llenar campo historia" },
         { id: "info_dato_curioso", mensaje: "Llenar campo datos curiosos" },
         { id: "sitio_lugar", mensaje: "Llenar campo sitio web" },
-        { id: "ubicacion_lugar", mensaje: "Llenar campo link ubicacion" },
-        { id: "filtro_tematico", mensaje: "Llenar campo filtro tematico" },
+        { id: "ubicacion_lugar", mensaje: "Llenar campo link ubicacion" }
     ];
 
     for (const campo of campos) {
