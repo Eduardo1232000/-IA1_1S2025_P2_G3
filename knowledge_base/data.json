@@ -577,7 +577,7 @@
         },
         "sitio_web": "https://munilivingston.gob.gt/",
         "ubicacion": "https://maps.app.goo.gl/tiXMEfbHine5ejtB6",
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": "./img/LivFace4.png"
     },
     {
         "index": 10,
@@ -621,7 +621,7 @@
         },
         "sitio_web": "https://www.visitcentroamerica.com/visitar/iglesia-santo-tomas-cerro-pascual-abaj-mercado-chichicastenango/",
         "ubicacion": "https://maps.app.goo.gl/CpGwgSxoqK2b8hBw6",
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": "./img/ChiFace1.png"
     },
     {
         "index": 11,
@@ -665,7 +665,7 @@
         },
         "sitio_web": "https://www.tripadvisor.es/Attraction_Review-g303868-d600477-Reviews-Semuc_Champey-Lanquin_Alta_Verapaz_Department.html",
         "ubicacion": "https://maps.app.goo.gl/5W3M7hASPfRn6chQ8",
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": "./img/SemuFace1.png"
     },
     {
         "index": 12,
@@ -709,7 +709,7 @@
         },
         "sitio_web": "https://www.guatemala.com/guias/aventura/cuevas-de-actun-kan-un-misterioso-destino-natural-en-peten/",
         "ubicacion": "https://maps.app.goo.gl/XNGwHwjSMhqKjYii8",
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": "./img/CueFace1.png"
     },
     {
         "index": 13,
@@ -753,7 +753,7 @@
         },
         "sitio_web": "https://www.tripadvisor.es/Attraction_Review-g1087643-d1997571-Reviews-Solola_Market-Solola_Solola_Department_Western_Highlands.html",
         "ubicacion": "https://maps.app.goo.gl/rNduqpdFqamgSTDc7",
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": "./img/SoloFace1.png"
     },
     {
         "index": 14,
@@ -797,7 +797,7 @@
         },
         "sitio_web": "https://aprende.guatemala.com/historia/geografia/crater-azul-peten-guatemala/",
         "ubicacion": "https://maps.app.goo.gl/XuDF57WxKhjdHpaT8",
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": "./img/AzulFace1.png"
     },
     {
         "index": 15,
@@ -838,7 +838,7 @@
         },
         "sitio_web": "https://www.guatemala.com/noticias/sociedad/isla-flores-peten-uno-los-pueblos-mas-pintorescos-del-mundo.html/",
         "ubicacion": "https://maps.app.goo.gl/dcg5beiPjwQEgmmD9",
-        "filtro_tematico": "./img/cara.png"
+        "filtro_tematico": "./img/FloresFace1.png"
     },
     {
         "index": 16,
@@ -890,6 +890,6 @@
         },
         "sitio_web": "https://www.visitcentroamerica.com/visitar/lago-atitlan-pueblos/",
         "ubicacion": "https://maps.app.goo.gl/Snzo6cPsWKU8VgWJA",
-        "filtro_tematico": ".|"
+        "filtro_tematico": "./img/LagoAFace1.png"
     }
 ]
