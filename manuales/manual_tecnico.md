@@ -25,7 +25,7 @@ Este manual está dirigido a desarrolladores, administradores del sistema y cual
 TurisAR es una plataforma interactiva que utiliza la tecnología de Realidad Aumentada para ofrecer a los usuarios información enriquecida sobre los sitios turísticos. A través de su dispositivo móvil, el usuario puede ver información histórica, cultural, multimedia, y más, sobre los puntos de interés al enfocarlos con la cámara. Además, los administradores pueden gestionar los puntos turísticos y su contenido a través de una interfaz web.
 
 # Arquitectura del sistema.
-![Imagen arquitectura](../img/arquitectura.png)
+![Imagen arquitectura](./img/Arquitectura.png)
 
 ## Módulo de Usuario
 Este módulo es responsable de la interacción del usuario con la plataforma. La aplicación usa MindAR y AR.js para integrar Realidad Aumentada en el navegador web y mostrar información relevante sobre los puntos turísticos cuando los usuarios escanean los marcadores AR.
@@ -33,11 +33,11 @@ Este módulo es responsable de la interacción del usuario con la plataforma. La
 El módulo administrativo es una interfaz web segura donde los administradores pueden gestionar el contenido de los puntos turísticos. Esto incluye la posibilidad de agregar, editar o eliminar puntos de interés, así como gestionar el contenido multimedia asociado.
 
 # Diagramas de flujo
-![Diagrama de flujo 1](../img/flujo1.png)
+![Diagrama de flujo 1](./img/flujo1.png)
 
-![Diagrama de flujo 2](../img/flujo2.png)
+![Diagrama de flujo 2](./img/flujo2.png)
 
-![Diagrama de flujo 3](../img/flujo3.png)
+![Diagrama de flujo 3](./img/flujo3.png)
 
 # Componentes clave
 ## Módulo de Usuario
